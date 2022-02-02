@@ -2,13 +2,16 @@ package br.com.tiagopedroso
 
 fun main() {
     println("a".repeat(4))
+    var x: Boolean
 }
 
 fun String.repeat(n: Int): String {
     val sb = StringBuilder(n * length)
     for (i in 1..n) {
         sb.append(this)
+//    this?.isEmpty()
     }
+
     return sb.toString()
 }
 

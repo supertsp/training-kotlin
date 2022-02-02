@@ -35,7 +35,7 @@ fun main() {
     val y: Int = 2
     val sum1 = x ?: 0 + y
     val sum2 = x?: (0 + y)  //the line above make this
-    val sum3 = (x?: 0) + y  //the line above make this
+    val sum3 = (x?: 0) + y  //marking the real intention
     println(
         "sum1: $sum1" +
         "sum2: $sum2" +
@@ -54,4 +54,14 @@ fun isFoo1(n: Name) = n.value == "foo"
 fun isFoo2(n: Name?) = n?.value == "foo"
 fun isFoo3(n: Name?) = n != null && n.value == "foo"
 fun isFoo4(n: Name?) = n?.value == "foo"
+
+//fun foo(list1: List<Int?>, list2: List<Int>?) {
+//    list1.size
+//    list2.size
+//
+//    val i: Int =
+//            list1.get(0)
+//    val j: Int =
+//            list2.get(0)
+//}
 
